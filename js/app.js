@@ -29,7 +29,7 @@ createApp({
                     ],
                 },
                 {
-                    name: 'Fabio',
+                    name: 'Maria',
                     avatar: './img/avatar-2.jpg',
                     visible: true,
                     messages: [
@@ -51,7 +51,7 @@ createApp({
                     ],
                 },
                 {
-                    name: 'Samuele',
+                    name: 'Francesca',
                     avatar: './img/avatar-3.jpg',
                     visible: true,
                     messages: [
@@ -73,7 +73,7 @@ createApp({
                     ],
                 },
                 {
-                    name: 'Alessandro B.',
+                    name: 'Alessandra B.',
                     avatar: './img/avatar-4.jpg',
                     visible: true,
                     messages: [
@@ -90,7 +90,7 @@ createApp({
                     ],
                 },
                 {
-                    name: 'Alessandro L.',
+                    name: 'Lucrezia L.',
                     avatar: './img/avatar-5.jpg',
                     visible: true,
                     messages: [

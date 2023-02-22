@@ -71,7 +71,7 @@
                     </div>
                     <!-- CHAT CHIUSE ULTIMI MESSAGGI -->
 
-                    <div class="container-scroll-chat">
+                    <div class="container-scroll-chat" @click>
                         <div v-for="(contact, index) in contacts" :key="index" class="container-chat-close">
                             <div class="chat-justify">
                                 <div class="flex">
@@ -82,16 +82,13 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <p class="last-messagge">{{ contacts[index].messages.slice(-1)[0].date }}</p>
+                                    <p class="last-messagge">{{ contacts[index].messages.slice(-1)[0].date.split(' ')[1] }}</p>
 
                                 </div>
                             </div>
+                         
                         </div>
                     </div>
-
-
-
-
 
                 </section>
                 <!-- SEZIONE CHAT APERTA -->
