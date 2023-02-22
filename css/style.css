@@ -9,11 +9,13 @@ li,
 ol {
     list-style: none;
 }
-body{
+
+body {
     height: 100vh;
-     background-color: #dbdbd2; 
+    background-color: #dbdbd2;
 }
-body::before{
+
+body::before {
     z-index: -1;
     position: absolute;
     width: 100%;
@@ -21,6 +23,7 @@ body::before{
     background-color: #009688;
     content: '';
 }
+
 .container {
     display: flex;
     border: 1px solid red;
@@ -48,7 +51,7 @@ body::before{
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    background-color:#eaeaea ;
+    background-color: #eaeaea;
 
 }
 
@@ -115,7 +118,7 @@ body::before{
 .notification-icon {
     color: rgb(154, 224, 224);
     background-color: white;
-    
+
     border: 10px solid white;
     border-radius: 9999px;
     font-size: 16px;
@@ -127,21 +130,24 @@ body::before{
     display: flex;
     padding: 5px;
 }
-.under-line{
+
+.under-line {
     text-decoration: underline;
     color: rgb(87, 83, 83);
 
 }
-.flex{
+
+.flex {
     display: flex;
 }
 
-.research{
+.research {
     display: flex;
     padding: 3px;
-    
+
 }
-.search{
+
+.search {
     padding: 3px 0px 3px 0px;
     margin-right: 0;
     flex-basis: 15%;
@@ -149,95 +155,114 @@ body::before{
     background-color: white;
     border: 1px solid rgb(149, 149, 149);
 }
-.text-research{
+
+.text-research {
     flex-basis: 85%;
     padding: 4px 3px 4px 3px;
     border: 1px solid rgb(149, 149, 149);
     flex-grow: 1;
 }
-.chat-justify{
+
+.chat-justify {
     display: flex;
     justify-content: space-between;
     padding: 3px 3px 3px 8px;
     background-color: #ffffff;
 }
-.last-messagge{
+
+.last-messagge {
     padding: 3px;
     color: rgb(137, 133, 133);
     font-size: 12px;
 }
-.container-chat-close{
-    border-bottom: 1px solid grey;
-    
-    
+
+.container-chat-close {
+    border-bottom: 1px solid #e9ebeb;
+
+
 
 }
-.container-chat-close:hover{
-    background-color: rgb(204, 202, 202);
-    
-    
+
+.chat-justify:hover {
+    background-color: #e9ebeb;
+
+
 
 }
-.container-scroll-chat{
+
+.container-scroll-chat {
     overflow-y: scroll;
     flex-grow: 1;
     background-color: #ffffff;
-    
+
 }
-.ico-chat{
+
+.ico-chat {
     color: grey;
     flex-basis: 8%;
     display: flex;
     justify-content: center;
     font-size: 18px;
 }
-.message{
-    display: flex;  
-    padding: 4px 0px ;
+
+.message {
+    display: flex;
+    padding: 4px 0px;
     align-items: center;
 }
-.send-messagge{
+
+.send-messagge {
     flex-basis: 84%;
     display: flex;
     padding: 4px;
 }
-.border-send{
-    border:1px solid white;
+
+.border-send {
+    border: 1px solid white;
     border-radius: 4px;
 }
-.flex-messagge{
-     flex-basis: 45%; 
+
+.flex-messagge {
+    flex-basis: 45%;
 }
-.send{
+
+.send {
     flex-direction: row-reverse;
-    padding-right:  35px;
+    padding-right: 35px;
     padding-top: 10px;
 }
-.received{
+
+.received {
     flex-direction: row;
     padding-left: 35px;
     padding-top: 10px;
 }
-.background-send{
-    background-color:#d5f9ba ;
+
+.background-send {
+    background-color: #d5f9ba;
     padding: 10px;
     border: 1px solid #d5f9ba;
     border-radius: 6px;
-    
+
 }
-.chat-open{
-    padding-top:50px ;
+
+.chat-open {
+    padding-top: 50px;
 }
-.background-received{
-    background-color:white ;
+
+.background-received {
+    background-color: white;
     padding: 10px;
     border: 1px solid white;
     border-radius: 6px;
-    
+
 }
-.hours{
-    /* margin-bottom: -25px; */
+
+.hours {
     color: grey;
     font-size: 12px;
     flex-direction: row-reverse;
-} 
+}
+.img{
+    width: 20px;
+}
