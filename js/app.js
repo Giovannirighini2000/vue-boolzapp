@@ -130,7 +130,7 @@ createApp({
                 },
                 {
                     name: 'Federico',
-                    avatar:  './img./avatar-7.jpg',
+                    avatar: './img./avatar-7.jpg',
                     visible: true,
                     messages: [
                         {
@@ -147,7 +147,7 @@ createApp({
                 },
                 {
                     name: 'Davide',
-                    avatar:  './img/avatar-8.jpg',
+                    avatar: './img/avatar-8.jpg',
                     visible: true,
                     messages: [
                         {

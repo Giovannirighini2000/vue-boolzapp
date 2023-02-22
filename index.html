@@ -70,196 +70,27 @@
 
                     </div>
                     <!-- CHAT CHIUSE ULTIMI MESSAGGI -->
+
                     <div class="container-scroll-chat">
-                        <div class="container-chat-close">
+                        <div v-for="(contact, index) in contacts" :key="index" class="container-chat-close">
                             <div class="chat-justify">
                                 <div class="flex">
-                                    <img class="avatar-img "
-                                        src="https://4.bp.blogspot.com/_fLmqQ3pMUvQ/SVC4zkT7kJI/AAAAAAAABJ0/G9cA3FECwqk/s320/faceyourmanga.jpg">
-                                        <div>
-                                            
-                                        </div>
+                                    <img :src="contact.avatar" class="avatar-img">
                                     <div class="nomi name-left">
-                                        <h4>
-                                            Michele
-                                        </h4>
-                                        <p class="last-login">
-                                            Ultimo messaggio inviato
-                                        </p>
+                                        <h4>{{ contact.name }}</h4>
+                                        <p class="last-login">{{ contacts[index].messages.slice(-1)[0].message }}</p>
                                     </div>
                                 </div>
-                                <div class="last-messagge">
-                                    12:00
+                                <div>
+                                    <p class="last-messagge">{{ contacts[index].messages.slice(-1)[0].date }}</p>
 
                                 </div>
-
                             </div>
-
-
                         </div>
-                        <div class="container-chat-close">
-                            <div class="chat-justify">
-                                <div class="flex">
-                                    <img class="avatar-img "
-                                        src="https://4.bp.blogspot.com/_fLmqQ3pMUvQ/SVC4zkT7kJI/AAAAAAAABJ0/G9cA3FECwqk/s320/faceyourmanga.jpg">
-                                    <div class="nomi name-left">
-                                        <h4>
-                                            Michele
-                                        </h4>
-                                        <p class="last-login">
-                                            Ultimo messaggio inviato
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="last-messagge">
-                                    12:00
-
-                                </div>
-
-                            </div>
-
-
-                        </div>
-                        <div class="container-chat-close">
-                            <div class="chat-justify">
-                                <div class="flex">
-                                    <img class="avatar-img "
-                                        src="https://4.bp.blogspot.com/_fLmqQ3pMUvQ/SVC4zkT7kJI/AAAAAAAABJ0/G9cA3FECwqk/s320/faceyourmanga.jpg">
-                                    <div class="nomi name-left">
-                                        <h4>
-                                            Michele
-                                        </h4>
-                                        <p class="last-login">
-                                            Ultimo messaggio inviato
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="last-messagge">
-                                    12:00
-
-                                </div>
-
-                            </div>
-
-
-                        </div>
-                        <div class="container-chat-close">
-                            <div class="chat-justify">
-                                <div class="flex">
-                                    <img class="avatar-img "
-                                        src="https://4.bp.blogspot.com/_fLmqQ3pMUvQ/SVC4zkT7kJI/AAAAAAAABJ0/G9cA3FECwqk/s320/faceyourmanga.jpg">
-                                    <div class="nomi name-left">
-                                        <h4>
-                                            Michele
-                                        </h4>
-                                        <p class="last-login">
-                                            Ultimo messaggio inviato
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="last-messagge">
-                                    12:00
-
-                                </div>
-
-                            </div>
-
-
-                        </div>
-                        <div class="container-chat-close">
-                            <div class="chat-justify">
-                                <div class="flex">
-                                    <img class="avatar-img "
-                                        src="https://4.bp.blogspot.com/_fLmqQ3pMUvQ/SVC4zkT7kJI/AAAAAAAABJ0/G9cA3FECwqk/s320/faceyourmanga.jpg">
-                                    <div class="nomi name-left">
-                                        <h4>
-                                            Michele
-                                        </h4>
-                                        <p class="last-login">
-                                            Ultimo messaggio inviato
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="last-messagge">
-                                    12:00
-
-                                </div>
-
-                            </div>
-
-
-                        </div>
-                        <div class="container-chat-close">
-                            <div class="chat-justify">
-                                <div class="flex">
-                                    <img class="avatar-img "
-                                        src="https://4.bp.blogspot.com/_fLmqQ3pMUvQ/SVC4zkT7kJI/AAAAAAAABJ0/G9cA3FECwqk/s320/faceyourmanga.jpg">
-                                    <div class="nomi name-left">
-                                        <h4>
-                                            Michele
-                                        </h4>
-                                        <p class="last-login">
-                                            Ultimo messaggio inviato
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="last-messagge">
-                                    12:00
-
-                                </div>
-
-                            </div>
-
-
-                        </div>
-                        <div class="container-chat-close">
-                            <div class="chat-justify">
-                                <div class="flex">
-                                    <img class="avatar-img "
-                                        src="https://4.bp.blogspot.com/_fLmqQ3pMUvQ/SVC4zkT7kJI/AAAAAAAABJ0/G9cA3FECwqk/s320/faceyourmanga.jpg">
-                                    <div class="nomi name-left">
-                                        <h4>
-                                            Michele
-                                        </h4>
-                                        <p class="last-login">
-                                            Ultimo messaggio inviato
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="last-messagge">
-                                    12:00
-
-                                </div>
-
-                            </div>
-
-
-                        </div>
-                        <div class="container-chat-close">
-                            <div class="chat-justify">
-                                <div class="flex">
-                                    <img class="avatar-img "
-                                        src="https://4.bp.blogspot.com/_fLmqQ3pMUvQ/SVC4zkT7kJI/AAAAAAAABJ0/G9cA3FECwqk/s320/faceyourmanga.jpg">
-                                    <div class="nomi name-left">
-                                        <h4>
-                                            Michele
-                                        </h4>
-                                        <p class="last-login">
-                                            Ultimo messaggio inviato
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="last-messagge">
-                                    12:00
-
-                                </div>
-
-                            </div>
-
-
-                        </div>
-
                     </div>
+
+
+
 
 
                 </section>
@@ -375,7 +206,7 @@
                     </div>
 
                 </section>
-            
+
 
             </div>
         </section>
