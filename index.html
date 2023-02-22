@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>boolzapp</title>
+</head>
+
+<body>    
+    <div id="app">
+        <!-- {{message}} -->
+        <section>
+            <div class="container height">
+                <!-- SEZIONE PROFILI E CHAT CHIUSE-->
+                <section class="person">
+                    <!-- IL TUO PROFILO -->
+                    <div class="flex-profilo">
+                        <div class="flex-pro">
+                            <img class="avatar-img"
+                                src="https://4.bp.blogspot.com/_fLmqQ3pMUvQ/SVC4zkT7kJI/AAAAAAAABJ0/G9cA3FECwqk/s320/faceyourmanga.jpg">
+                            <div class="nomi">
+                                <h4>
+                                    Sofia
+                                </h4>
+                            </div>
+                        </div>
+                        <div>
+                            <ul class="icons flex-pro">
+                                <li class="ico">
+                                    <i class="fa-solid fa-circle-notch"></i>
+                                </li>
+                                <li class="ico">
+                                    <i class="fa-solid fa-message"></i>
+    
+                                </li>
+                                <li class="ico ico-right">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+    
+                                </li>
+                            </ul>
+    
+                        </div>
+    
+    
+                    </div>
+                    <!-- NOTIFICHE -->
+                    <div class="notification">
+                        <div class="notification-icon">
+                            <i class="fa-solid fa-bell-slash"></i>
+    
+                        </div>
+                        <div class="name-left">
+                            <p>
+                                Ricevi notifiche di nuovi messaggi
+                            </p>
+                            <p class="under-line">attiva notifiche desktop</p>
+                        </div>
+    
+    
+                    </div>
+                    <div class="research">
+                        <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        
+                        <input class="text-research" type="search" placeholder="Cerca o inizia una nuova chat">
+    
+                    </div>
+                    <!-- CHAT CHIUSE ULTIMI MESSAGGI -->
+                    <div class="container-scroll-chat">
+                        <div class="container-chat-close">
+                            <div class="chat-justify">
+                                <div class="flex">
+                                    <img class="avatar-img "
+                                        src="https://4.bp.blogspot.com/_fLmqQ3pMUvQ/SVC4zkT7kJI/AAAAAAAABJ0/G9cA3FECwqk/s320/faceyourmanga.jpg">
+                                    <div class="nomi name-left">
+                                        <h4>
+                                            Michele
+                                        </h4>
+                                        <p class="last-login">
+                                            Ultimo messaggio inviato
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="last-messagge">
+                                    12:00
+        
+                                </div>
+        
+                            </div>
+                            
+        
+                        </div>
+                        <div class="container-chat-close">
+                            <div class="chat-justify">
+                                <div class="flex">
+                                    <img class="avatar-img "
+                                        src="https://4.bp.blogspot.com/_fLmqQ3pMUvQ/SVC4zkT7kJI/AAAAAAAABJ0/G9cA3FECwqk/s320/faceyourmanga.jpg">
+                                    <div class="nomi name-left">
+                                        <h4>
+                                            Michele
+                                        </h4>
+                                        <p class="last-login">
+                                            Ultimo messaggio inviato
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="last-messagge">
+                                    12:00
+        
+                                </div>
+        
+                            </div>
+                            
+        
+                        </div>
+                        <div class="container-chat-close">
+                            <div class="chat-justify">
+                                <div class="flex">
+                                    <img class="avatar-img "
+                                        src="https://4.bp.blogspot.com/_fLmqQ3pMUvQ/SVC4zkT7kJI/AAAAAAAABJ0/G9cA3FECwqk/s320/faceyourmanga.jpg">
+                                    <div class="nomi name-left">
+                                        <h4>
+                                            Michele
+                                        </h4>
+                                        <p class="last-login">
+                                            Ultimo messaggio inviato
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="last-messagge">
+                                    12:00
+        
+                                </div>
+        
+                            </div>
+                            
+        
+                        </div>
+                        <div class="container-chat-close">
+                            <div class="chat-justify">
+                                <div class="flex">
+                                    <img class="avatar-img "
+                                        src="https://4.bp.blogspot.com/_fLmqQ3pMUvQ/SVC4zkT7kJI/AAAAAAAABJ0/G9cA3FECwqk/s320/faceyourmanga.jpg">
+                                    <div class="nomi name-left">
+                                        <h4>
+                                            Michele
+                                        </h4>
+                                        <p class="last-login">
+                                            Ultimo messaggio inviato
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="last-messagge">
+                                    12:00
+        
+                                </div>
+        
+                            </div>
+                            
+        
+                        </div>
+                        <div class="container-chat-close">
+                            <div class="chat-justify">
+                                <div class="flex">
+                                    <img class="avatar-img "
+                                        src="https://4.bp.blogspot.com/_fLmqQ3pMUvQ/SVC4zkT7kJI/AAAAAAAABJ0/G9cA3FECwqk/s320/faceyourmanga.jpg">
+                                    <div class="nomi name-left">
+                                        <h4>
+                                            Michele
+                                        </h4>
+                                        <p class="last-login">
+                                            Ultimo messaggio inviato
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="last-messagge">
+                                    12:00
+        
+                                </div>
+        
+                            </div>
+                            
+        
+                        </div>
+                        <div class="container-chat-close">
+                            <div class="chat-justify">
+                                <div class="flex">
+                                    <img class="avatar-img "
+                                        src="https://4.bp.blogspot.com/_fLmqQ3pMUvQ/SVC4zkT7kJI/AAAAAAAABJ0/G9cA3FECwqk/s320/faceyourmanga.jpg">
+                                    <div class="nomi name-left">
+                                        <h4>
+                                            Michele
+                                        </h4>
+                                        <p class="last-login">
+                                            Ultimo messaggio inviato
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="last-messagge">
+                                    12:00
+        
+                                </div>
+        
+                            </div>
+                            
+        
+                        </div>
+                        <div class="container-chat-close">
+                            <div class="chat-justify">
+                                <div class="flex">
+                                    <img class="avatar-img "
+                                        src="https://4.bp.blogspot.com/_fLmqQ3pMUvQ/SVC4zkT7kJI/AAAAAAAABJ0/G9cA3FECwqk/s320/faceyourmanga.jpg">
+                                    <div class="nomi name-left">
+                                        <h4>
+                                            Michele
+                                        </h4>
+                                        <p class="last-login">
+                                            Ultimo messaggio inviato
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="last-messagge">
+                                    12:00
+        
+                                </div>
+        
+                            </div>
+                            
+        
+                        </div>
+                        <div class="container-chat-close">
+                            <div class="chat-justify">
+                                <div class="flex">
+                                    <img class="avatar-img "
+                                        src="https://4.bp.blogspot.com/_fLmqQ3pMUvQ/SVC4zkT7kJI/AAAAAAAABJ0/G9cA3FECwqk/s320/faceyourmanga.jpg">
+                                    <div class="nomi name-left">
+                                        <h4>
+                                            Michele
+                                        </h4>
+                                        <p class="last-login">
+                                            Ultimo messaggio inviato
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="last-messagge">
+                                    12:00
+        
+                                </div>
+        
+                            </div>
+                            
+        
+                        </div>
+    
+                    </div>
+    
+    
+                </section>
+                <!-- SEZIONE CHAT APERTA -->
+                <section class="chat">
+                    <div class="flex-profilo chat-prof">
+                        <div class="flex-pro">
+                            <img class="avatar-img "
+                                src="https://4.bp.blogspot.com/_fLmqQ3pMUvQ/SVC4zkT7kJI/AAAAAAAABJ0/G9cA3FECwqk/s320/faceyourmanga.jpg">
+                            <div class="nomi name-left">
+                                <h4>
+                                    Michele
+                                </h4>
+                                <p class="last-login">
+                                    Ultimo accesso oggi alle 12:00
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <ul class="icons flex-pro">
+                                <li class="ico">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </li>
+                                <li class="ico">
+                                    <i class="fa-solid fa-paperclip"></i>
+    
+                                </li>
+                                <li class="ico ico-right">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+    
+                                </li>
+                            </ul>
+    
+                        </div>
+                    </div>
+                    <!-- CHAT APERTA MESSAGGI -->
+                    <div class="container-chat">
+                        <div class="chat-open">
+                            <div class="flex-messagge send">
+                                <div class="background-send">
+                                    <p class="">
+                                        hai portato a spasso il cane?
+                                    </p>
+                                </div>
+                                
+
+                            </div>
+                            <div class="flex-messagge received">
+                                <div class="background-received">
+                                    <p class="">
+                                        hai portato a spasso il cane?
+                                    </p>
+                                </div>
+
+                            </div>
+                            
+                            
+                            
+    
+                        </div>
+    
+    
+                    </div>
+                    <!-- INVIA MESSAGGIO -->
+                    <div class="message">
+                        <div class="emoji ico-chat">
+                            <i class="fa-regular fa-face-smile"></i>
+                        </div>
+                        <div class="send-messagge">
+                            <input class="text-research border-send" type="search" placeholder="Scrivi un messaggio">
+                        </div>
+                        <div class="microphone ico-chat">
+                            <i class="fa-solid fa-microphone"></i>
+
+                        </div>
+                        
+    
+                    </div>
+    
+                </section>
+    
+            </div>
+        </section>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/a077d2367d.js" crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
