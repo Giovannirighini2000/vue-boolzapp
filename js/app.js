@@ -170,6 +170,7 @@ createApp({
             ],
             activeContactIndex: 0,
             TextMessage: '',
+            searchValue :'',
         }
 
 
@@ -199,7 +200,19 @@ createApp({
                 writeChat.messages.push(okMessage);
               }, 1000);
             }
-          },
+        },
 
     },
+    computed:{
+        usersList(){
+            if(this.searchValue.trim().length > 0){
+                return this.contacts.filter((contact)=>
+                contact.name.toLowerCase().includes(this.searchValue.trim().toLowerCase()))
+
+            }
+            return this.contacts
+        }
+    }
+
+
 }).mount('#app')

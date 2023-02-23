@@ -66,13 +66,13 @@
                     <div class="research">
                         <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
 
-                        <input class="text-research" type="search" placeholder="Cerca o inizia una nuova chat">
+                        <input v-model="searchValue" class="text-research" type="search" placeholder="Cerca o inizia una nuova chat">
 
                     </div>
                     <!-- CHAT CHIUSE ULTIMI MESSAGGI -->
 
                     <div class="container-scroll-chat" >
-                        <div v-for="(contact, index) in contacts" class="container-chat-close" @click="activeProfile(index)">
+                        <div v-for="(contact, index) in usersList" class="container-chat-close" @click="activeProfile(index)">
                             <div class="chat-justify">
                                 <div class="flex">
                                     <img :src="contact.avatar" class="avatar-img">
