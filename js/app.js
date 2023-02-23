@@ -1,5 +1,4 @@
 
-
 const { createApp } = Vue
 
 createApp({
@@ -169,7 +168,8 @@ createApp({
                     ],
                 }
             ],
-            activeContactIndex: 0
+            activeContactIndex: 0,
+            TextMessage: '',
         }
 
 
@@ -179,8 +179,19 @@ createApp({
             this.activeContactIndex = index
             console.log('click')
 
-        }
-    }
+        },
+        addNewMessageSend() {
+            if (this.TextMessage !== '') {
+                const writeChat = this.contacts[this.activeContactIndex]
+                writeChat.messages.push({
+                    date: '12:00',
+                    message: this.TextMessage,
 
+                })
+                this.TextMessage = ''
+            }
 
+        },
+
+    },
 }).mount('#app')

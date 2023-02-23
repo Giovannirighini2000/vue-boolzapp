@@ -82,7 +82,7 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <p class="last-messagge">{{ contacts[index].messages.slice(-1)[0].date.split(' ')[1].split(':').splice(0,2).join(':') }}</p>
+                                    <p class="last-messagge">{{ contacts[index].messages.slice(-1)[0].date.split(' ')[1].split(':').slice(0,2).join(':') }}</p>
 
                                 </div>
                             </div>
@@ -100,7 +100,7 @@
                                 <img :src="contact.avatar" class="avatar-img">
                                 <div class="nomi name-left">
                                     <h4>{{ contact.name }}</h4>
-                                    <p class="last-login">Ultimo accesso oggi alle {{ contacts[index].messages.slice(-1)[0].date.split(' ')[1].split(':').splice(0,2).join(':') }}</p>
+                                    <p class="last-login">Ultimo accesso oggi alle {{ contacts[index].messages.slice(-1)[0].date.split(' ')[1].split(':').slice(0,2).join(':') }}</p> 
                                 </div>
                             </div>
                             <div>
@@ -126,21 +126,23 @@
                     <!-- CHAT APERTA MESSAGGI -->
                     <div class="container-chat">
                         
-                            <div class="chat-open" v-for="message in contacts[activeContactIndex].messages">
-                                <div class="flex" :class="{'send': message.status === 'sent', 'received': message.status === 'received'}">
-                                    <div class="flex-messagge" :class="{'background-send': message.status === 'sent', 'background-received': message.status === 'received'}">
-                                        <div class="message-write"> 
-                                            {{ message.message }}
+                        <div class="chat-open" v-for="message in contacts[activeContactIndex].messages">
+                            <div class="flex" :class="{'send': message.status === 'sent', 'received': message.status === 'received'}">
+                                <div class="flex-messagge" :class="{'background-send': message.status === 'sent', 'background-received': message.status === 'received'}">
+                                    <div> 
+                                        {{ message.message }}
 
-                                        </div>
-                                        <div class="flex hours">
-                                         {{ message.date.split(' ')[1].split(':').splice(0,2).join(':') }}
-                                        </div>
-                                       
                                     </div>
+                                    <div class="flex hours">
+                                         {{ message.date.split(' ')[1].split(':').slice(0,2).join(':') }} 
+                                    </div>
+                                
                                     
                                 </div>
+                                
                             </div>
+                            
+                        </div>
                         
                     </div>
                     <!-- INVIA MESSAGGIO -->
@@ -149,7 +151,7 @@
                             <i class="fa-regular fa-face-smile"></i>
                         </div>
                         <div class="send-messagge">
-                            <input class="text-research border-send" type="search" placeholder="Scrivi un messaggio">
+                            <input v-model="TextMessage" @keyup.enter="addNewMessageSend" class="text-research border-send" type="search" placeholder="Scrivi un messaggio">
                         </div>
                         <div class="microphone ico-chat">
                             <i class="fa-solid fa-microphone"></i>
