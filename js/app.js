@@ -184,8 +184,9 @@ createApp({
             if (this.TextMessage !== '') {
                 const writeChat = this.contacts[this.activeContactIndex]
                 writeChat.messages.push({
-                    date: '12:00',
+                    date: new Date().toLocaleString(),
                     message: this.TextMessage,
+                    status: 'sent'
 
                 })
                 this.TextMessage = ''
