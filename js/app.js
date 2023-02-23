@@ -182,17 +182,24 @@ createApp({
         },
         addNewMessageSend() {
             if (this.TextMessage !== '') {
-                const writeChat = this.contacts[this.activeContactIndex]
-                writeChat.messages.push({
-                    date: new Date().toLocaleString(),
-                    message: this.TextMessage,
-                    status: 'sent'
-
-                })
-                this.TextMessage = ''
+              const writeChat = this.contacts[this.activeContactIndex];
+              const newMessage = {
+                date: new Date().toLocaleString(),
+                message: this.TextMessage,
+                status: 'sent'
+              };
+              writeChat.messages.push(newMessage);
+              this.TextMessage = '';
+              setTimeout(() => {
+                const okMessage = {
+                  date: new Date().toLocaleString(),
+                  message: 'ok',
+                  status: 'received'
+                };
+                writeChat.messages.push(okMessage);
+              }, 1000);
             }
-
-        },
+          },
 
     },
 }).mount('#app')
