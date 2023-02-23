@@ -183,6 +183,7 @@ body::before {
 
 
 
+
 }
 
 .chat-justify:hover {
@@ -269,6 +270,15 @@ body::before {
 .img {
     width: 20px;
 }
-.justify-chat{
+
+.justify-chat {
     justify-content: space-between;
+}
+
+.off-open-chat {
+    display: none;
+}
+
+.on-chat {
+    display: block;
 }

@@ -5,6 +5,7 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
+
             contacts: [
                 {
                     name: 'Michele',
@@ -167,7 +168,19 @@ createApp({
                         }
                     ],
                 }
-            ]
+            ],
+            activeContactIndex: 0
+        }
+
+
+    },
+    methods: {
+        activeProfile(index) {
+            this.activeContactIndex = index
+            console.log('click')
+
         }
     }
+
+
 }).mount('#app')
